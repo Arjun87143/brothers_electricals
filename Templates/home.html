@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brothers Electricals - Futuristic Electronic Spares</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#8A2BE2",
+              "background-light": "#f6f7f8",
+              "background-dark": "#0A0514",
+              "accent-blue": "#3b82f6"
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-dark font-display text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex w-full max-w-[1280px] flex-1 flex-col px-4 md:px-10 lg:px-20">
+<div class="w-full py-6 text-center">
+<h1 class="text-4xl font-bold tracking-widest uppercase text-white drop-shadow-[0_0_10px_theme(colors.primary/0.8)]">
+Brothers <span class="text-primary">Electricals</span>
+</h1>
+</div>
+<header class="sticky top-4 z-50 flex items-center justify-between whitespace-nowrap border border-solid border-white/10 bg-background-dark/50 p-3 px-6 backdrop-blur-md rounded-xl">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Brothers Electricals</h2>
+</div>
+<nav class="hidden items-center gap-9 lg:flex">
+<a class="text-white text-sm font-medium leading-normal transition-colors hover:text-primary" href="{% url 'home' %}">Home</a>
+<a class="text-white text-sm font-medium leading-normal transition-colors hover:text-primary" href="{% url 'aboutus' %}
+">About</a>
+<a class="text-white text-sm font-medium leading-normal transition-colors hover:text-primary" href="{% url 'contactus' %}">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-400 flex border-none bg-white/5 items-center justify-center pl-3 pr-2 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-white/5 h-full placeholder:text-gray-400 px-0 rounded-l-none border-l-0 text-base font-normal leading-normal" placeholder="Search..." value=""/>
+</div>
+</label>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative my-10 @container">
+<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-xl items-center justify-center p-4" data-alt="Abstract glowing circuit board pattern" style='background-image: linear-gradient(rgba(10, 5, 20, 0.8) 0%, rgba(10, 5, 20, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVZhXgxRrH9sB449usOdrpxXUtwvwpet0rR5Ng09CuqglLkIsN42DrjMJWkiBIUh42jDwkvH6nHftOfr6RHeTKUHzh6ZOAEHiYkb_dQTsu9ko_9IS3YMPSPIjPILY-CPqNI9KgRG1XKb2RAnDG6_UoqXZzXOtrNrdXofFGlPSmdDHuGZUDdfA3iPQCHYqnKYk0w2skcEMiphUOgZFI_VHUvmcffmXiRITXBvvXAWvzFh65xzdB-jkdlrH_vAP4VSVWE5RMBS0_CBA");'>
+<div class="flex flex-col gap-4 text-center items-center">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl max-w-3xl">Powering the Future. The Parts You Need.</h1>
+<p class="text-gray-300 text-sm font-normal leading-normal @[480px]:text-base max-w-2xl">Your Premier Destination for High-Quality Electronic Spares and Expert Services.</p>
+
+</section>
+<section class="mt-20">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">Find Your Component</h2>
+</section>
+<section class="mb-20">
+<div class="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-4">
+<div class="group relative flex flex-col justify-end overflow-hidden rounded-xl border border-white/10 bg-white/5 p-6 aspect-[4/3] transition-all duration-300 hover:border-primary hover:shadow-[0_0_20px_theme(colors.primary/0.4)]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110" data-alt="Abstract representation of mixer grinder parts" style='background-image: linear-gradient(0deg, rgba(10, 5, 20, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZfq0kharhIEvvScsjV7fQWDDLpxaWqW-amPtw7BZUn6vJJdyjPJ5lxwNFysxHk-L_PA3YVBqvmz4QDszx8xBdGUDfwMii_p58X8NkKUeH8QijsYJ7eoyeDLeoUN6xjJXTZZJenQubNA1p1gvesWEsklqAl61RNPJmt0xSPlkdKvSzKTmweIxGKPbCsEADTjqZFunt1rHQPReorCX8SowS0eBqC6wtZoFZGtTeNW1K72iAoB4TIuBoVm9HUnpmKFpvi2NAVKFWWM8");'></div>
+<div class="relative z-10">
+<p class="text-white text-xl font-bold leading-tight w-4/5 line-clamp-2">Mixer Grinder Parts</p>
+</div>
+</div>
+<div class="group relative flex flex-col justify-end overflow-hidden rounded-xl border border-white/10 bg-white/5 p-6 aspect-[4/3] transition-all duration-300 hover:border-primary hover:shadow-[0_0_20px_theme(colors.primary/0.4)]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110" data-alt="Close-up of futuristic fan blades" style='background-image: linear-gradient(0deg, rgba(10, 5, 20, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWEXOGa_dofX3r-Ornk80KBNcEsg6wnYCjN6g6cyxg9bvOqb3dAd4i8xaeBvf2lfXL9dBCF-ztmXYCpZcObjrzmJO_FNy3eTxqK0CMHClT3NNzevLuse84lhb8C3BQO-r86_4PmJMDx519esm5maGtccF4q7rEn5Q_c96vkrAlqoPWszuHF-RkQSfZ_tr6FFKSPIn67NZoKJgAL3BlnNzCekpbQmhH7ZzK2MoeT94V0s0vrjivXDH1GqvDXP5bKhUalb3FwP2aJUg");'></div>
+<div class="relative z-10">
+<p class="text-white text-xl font-bold leading-tight w-4/5 line-clamp-2">Fan Components</p>
+</div>
+</div>
+<div class="group relative flex flex-col justify-end overflow-hidden rounded-xl border border-white/10 bg-white/5 p-6 aspect-[4/3] transition-all duration-300 hover:border-primary hover:shadow-[0_0_20px_theme(colors.primary/0.4)]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110" data-alt="Internal view of a complex electric motor" style='background-image: linear-gradient(0deg, rgba(10, 5, 20, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKv0FLFBEKMPzBhzlhmOnTvQ7xl8Xpca8ucnpeFnRT4cCXUSvGRlpRM_VxJiLMHv4FBCQAe9fRcV-WQVh14A9pxBRiDG1KhNHZf8-XPeq6JZVx9y-GodGPG0EXHNgVoKu1YA82NS0J6JPMha50O5Eo__V9uth7OQI5POZrV8mYfDZ4yL2PxyVVN26-oBWsKkWZHwdO_taW4IZzUsCC7u56XFqppJLA1i71gbTh1LVXmgWIdO5YNoI0ft26dkWZfeURdMwFCgytAxA");'></div>
+<div class="relative z-10">
+<p class="text-white text-xl font-bold leading-tight w-4/5 line-clamp-2">Electric Motors</p>
+</div>
+</div>
+<div class="group relative flex flex-col justify-end overflow-hidden rounded-xl border border-white/10 bg-white/5 p-6 aspect-[4/3] transition-all duration-300 hover:border-primary hover:shadow-[0_0_20px_theme(colors.primary/0.4)]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110" data-alt="Cross-section of a high-tech water pump" style='background-image: linear-gradient(0deg, rgba(10, 5, 20, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuADYlI3o133mqDFDXUhi7GDMza70afMzBPQzwLSDygAuMKNuZQiqb5ChhpXJ_2CZDx87Y1jZRdeytk3RTlyFsJNeY3K94oEX2UHWIF0aIbUmAgzMgEWddom1PnwqcslzfDw1TZ414rzyD5aX1m-iMoWU4w0fiis8fHo1yqf4uKExrvu3LYj4JwaMt5Wq-Sf5X2G8zTzoXsegkYFRIIZuFBkrL7wFMkqhFHG6RtGGAcYLBXBBKa_MaJOzvRAs9rO07R4vy7LqR03ruo");'></div>
+<div class="relative z-10">
+<p class="text-white text-xl font-bold leading-tight w-4/5 line-clamp-2">Water Pump Spares</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-20 rounded-xl bg-white/5 border border-white/10">
+<div class="@container">
+<div class="flex flex-col items-center justify-end gap-6 px-4 py-16 text-center @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+<div class="flex flex-col gap-3">
+<h1 class="text-primary text-4xl font-black leading-tight tracking-[-0.033em]">Expert Services On Demand</h1>
+<p class="text-gray-300 text-base font-normal leading-normal max-w-2xl mx-auto">From complex repairs to professional installations, our certified technicians are here to help.</p>
+</div>
+<h4>For scheduling our technicians</h4>
+<h4>Contact :+91 9544909523</h4>
+<h4>Manikandan</h4>
+</div>
+</div>
+</section>
+</main>
+<footer class="mt-auto border-t border-white/10 pt-10 pb-8">
+<div class="grid grid-cols-1 gap-12 md:grid-cols-3 lg:grid-cols-12">
+<div class="md:col-span-3 lg:col-span-5 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Brothers Electricals</h2>
+</div>
+<p class="text-gray-400 text-sm">Your premier source for high-quality electronic components and expert repair services, powering innovation for a brighter future.</p>
+
+</div>
+<div class="lg:col-span-2">
+<h3 class="font-bold text-white mb-4">Quick Links</h3>
+<ul class="space-y-3 text-sm">
+<li><a class="text-gray-400 transition-colors hover:text-primary" href="{% url 'aboutus' %}
+">About Us</a></li>
+<li><a class="text-gray-400 transition-colors hover:text-primary" href="{% url 'contactus' %}">Contact</a></li>
+</ul>
+</div>
+<div class="lg:col-span-5 md:col-span-2">
+<h3 class="font-bold text-white mb-4">Our Location</h3>
+<div class="aspect-video w-full overflow-hidden rounded-lg border border-white/10">
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.132471885973!2d76.1172657!3d10.761795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c7c1bcf9f041%3A0x4f5c4cd622f6b812!2sBrothers%20Electricals!5e0!3m2!1sen!2sin!4v1732515010000!5m2!1sen!2sin"
+  width="600"
+  height="450"
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  class="w-full h-full grayscale invert hue-rotate-180">
+</iframe>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-white/10 pt-6 text-center text-sm text-gray-500">
+<p>© 2024 Brothers Electricals. All Rights Reserved. | <a class="hover:text-primary" href="#">Privacy Policy</a> | <a class="hover:text-primary" href="#">Terms of Service</a></p>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
